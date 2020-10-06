@@ -47,9 +47,9 @@ https://toblum.github.io/gif2carray/images/minecraft.gif
 https://toblum.github.io/gif2carray/images/nyan.gif
 https://toblum.github.io/gif2carray/images/jump.gif
 https://toblum.github.io/gif2carray/images/south-park.gif
-https://toblum.github.io/gif2carray/images/deer.gif
-https://64.media.tumblr.com/1bdacff5a8358b77c8d4bbe9a7c91cdc/94bda6e78a2135d0-10/s75x75_c1/21fb438b44b8f8c83fbd36f9a7780bf8f51019c7.gifv
-https://stat.ameba.jp/user_images/20190604/15/mukkumama/94/04/g/o0064003214425260661.gif`,
+https://toblum.github.io/gif2carray/images/hampster.gif
+https://toblum.github.io/gif2carray/images/kyle.gif
+https://64.media.tumblr.com/1bdacff5a8358b77c8d4bbe9a7c91cdc/94bda6e78a2135d0-10/s75x75_c1/21fb438b44b8f8c83fbd36f9a7780bf8f51019c7.gifv`,
       ctx: null,
       gifCanvas: null,
       gifCtx: null,
@@ -164,16 +164,20 @@ ${splitted}0x00};`;
           alert(`Could not read image "${gifURL}". Check if url is correct and remote loading is allowed.`)
         }
 
-        console.log("GIF loaded: ", gifURL, promisedGif);
         this.frames = promisedGif;
-        this.renderGIF();
-
-        this.frameIndex = 0;
-        for (let i = 0; i < this.frames.length; i++) {
-          this.renderFrame();
-        }
-
-        this.resultFrames.push(this.frames.length);
+        if (this.frames.length) {
+          console.log("GIF loaded: ", gifURL, promisedGif);
+          this.renderGIF();
+  
+          this.frameIndex = 0;
+          for (let i = 0; i < this.frames.length; i++) {
+            this.renderFrame();
+          }
+  
+          this.resultFrames.push(this.frames.length);
+        } else [
+          alert(`Could not decode image "${gifURL}". Please check the image and try again. Skipping.`)
+        ]
         conversionCounter++;
 
         if (conversionCounter == this.getImageUrls.length) {
