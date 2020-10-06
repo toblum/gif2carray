@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/gif2carray/'
-  }
+    base: '/gif2carray/'
+}
