@@ -1,3 +1,4 @@
 module.exports = {
-    base: '/gif2carray/'
+    base: '/gif2carray/',
+    assetsDir: 'assets'
 }
