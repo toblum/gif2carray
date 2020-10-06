@@ -8,7 +8,7 @@ This page converts animated GIF files to Arduino byte-arrays in RGB565 format as
 I couldn't make the converter scripts work in my environment, so I implemented this
 
 ## Usage
-See the published version here: [https://github.com/toblum/gif2carray](https://github.com/toblum/gif2carray)
+See the published version here: [https://toblum.github.io/gif2carray/](https://toblum.github.io/gif2carray/)
 
 Make sure the entered urls can be remote loaded.
 The conversion is done completely in the browser, no entered data is transferred to the server. See the [source code](https://github.com/toblum/gif2carray/tree/main) for implementation details.
