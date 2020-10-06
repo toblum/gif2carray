@@ -41,13 +41,13 @@ export default {
   props: {},
   data() {
     return {
-      urls: `/images/police.gif
-/images/cat.gif
-/images/minecraft.gif
-/images/nyan.gif
-/images/jump.gif
-/images/south-park.gif
-/images/deer.gif
+      urls: `https://toblum.github.io/gif2carray/images/police.gif
+https://toblum.github.io/gif2carray/images/cat.gif
+https://toblum.github.io/gif2carray/images/minecraft.gif
+https://toblum.github.io/gif2carray/images/nyan.gif
+https://toblum.github.io/gif2carray/images/jump.gif
+https://toblum.github.io/gif2carray/images/south-park.gif
+https://toblum.github.io/gif2carray/images/deer.gif
 https://64.media.tumblr.com/1bdacff5a8358b77c8d4bbe9a7c91cdc/94bda6e78a2135d0-10/s75x75_c1/21fb438b44b8f8c83fbd36f9a7780bf8f51019c7.gifv
 https://stat.ameba.jp/user_images/20190604/15/mukkumama/94/04/g/o0064003214425260661.gif`,
       ctx: null,
